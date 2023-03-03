@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Math {
+    width: 100%;
+    display: flex;
+    height: 20vh;
+
+}
+
+.Math>.Math_Txt {
+    display: flex;
+    flex-direction: column;
+    
+    width: 75%;
+    height: 100%;
+}
+
+.Math>.Math_Txt>:nth-child(1) {
+
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.Math>.Math_Txt>:nth-child(1)>p {
+    margin-left: 20px;
+}
+
+.Math>.Math_Txt>:nth-child(2) {
+
+    display: flex;
+    color: rgb(179, 70, 164);
+    width: 100%;
+    height: 70%;
+    font-size: 5vi;
+    align-items: center;
+    justify-content: center;
+}
+
+.Math>.Ac_btn {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 4vi;
+    justify-content: center;
+    background-color: rgb(179, 70, 164);
+    height: 100%;
+}
+
+.Buttons {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(31, 31, 31);
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto auto auto auto;
+
+
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-item_d1 {
+    color: white;
+    
+    
+}
+.grid-item_d2 {
+    background-color: rgb(179, 70, 164);
+    color: white;
+    
+}
+.grid-item_d2:hover{
+    background-color: white;
+    color: rgb(179, 70, 164);
+}
+
+.grid-item_d1:hover {
+    background-color: rgb(179, 70, 164);
+    
+}
