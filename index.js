@@ -1,6 +1,8 @@
+var Iok = true;
 let element = document.getElementById("MathID");
 function Call_d1(id) {
     let item = document.getElementById(id);
+    Iok = false;
     if (element.innerHTML.length > 26) {
         return;
     }
@@ -11,12 +13,21 @@ function Call_d1(id) {
 }
 
 function Call_d2(id) {
+   // alert(Iok)
     let item = document.getElementById(id);
-
+    if(Iok) {
+        return;
+    }
     if (id != ".") {
+        Iok = true;
+       // alert(Iok);
         element.innerHTML = eval(element.innerHTML);
     }
+    else{
+       Iok = true;
+    }
     if (id == "=") {
+        Iok = false;
         return
     }
     element.innerHTML += item.id;
